@@ -249,7 +249,7 @@ textarea:focus {
 -------- HEADER AREA CSS START --------
 ---------------------------------------*/
 header.header-area {
-  background: #3f7d20;
+  background: #52734d;
   color: #fff;
   font-size: 12px;
 }
@@ -338,6 +338,9 @@ a.krishok-cart span {
 /*--------------------------------------
 -------- MENU AREA CSS START --------
 ---------------------------------------*/
+.menubar {
+  background-color: black;
+}
 .menubar .logo {
   padding: 10px 0;
 }
@@ -376,6 +379,9 @@ a.krishok-cart span {
   border: none;
   background: #fff;
   padding: 6px 20px;
+}
+.menubarstrt {
+  color: white !important;
 }
 .menubar li:last-child {
   padding: 0;
