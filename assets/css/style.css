@@ -488,7 +488,7 @@ a.slicknav_item.slicknav_row {
   background: #000000;
   left: 0;
   top: 15%;
-  opacity: 0.7;
+  opacity: 0.5;
   content: "";
 }
 .hero-area-content p {
@@ -1677,7 +1677,8 @@ h5.widget-title:hover::before,
 -------- FAQ PAGE CSS START --------
 ---------------------------------------*/
 .theme2.theme5.hero-area {
-  background: url(../img/slide-bg-9.jpg) no-repeat 0 0 / cover;
+  background: url(https://images.unsplash.com/photo-1555520268-da08c3c2336a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+    no-repeat 0 0 / cover;
 }
 .faq-area {
   box-shadow: 0 0 15px #eee;
