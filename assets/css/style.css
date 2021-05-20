@@ -1430,9 +1430,9 @@ h5.widget-title:hover::before,
   background: none;
 }
 .hero-area.theme-3::before {
-  width: 70%;
-  top: 0;
-  height: 100%;
+  width: 60%;
+  top: 5rem;
+  height: 70%;
 }
 .hero-area-theme-3 {
   position: absolute;
@@ -1442,21 +1442,21 @@ h5.widget-title:hover::before,
   z-index: -1;
 }
 .hero-area-theme-3.theme-3_1 {
-  background-image: url(../img/slide-bg-5.jpg);
+  background-image: url(https://img.theculturetrip.com/wp-content/uploads/2018/02/rajasthani-thali-1.jpg);
   width: 70%;
   height: 100%;
   top: 0;
   left: 0;
 }
 .hero-area-theme-3.theme-3_2 {
-  background-image: url(../img/slide-bg-6.jpg);
+  background-image: url(https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
   width: 30%;
   height: 50%;
   top: 0;
   right: 0;
 }
 .hero-area-theme-3.theme-3_3 {
-  background-image: url(../img/slide-bg-7.jpg);
+  background-image: url(https://c.ndtvimg.com/f6akovn_spices_625x300_09_August_18.jpg);
   width: 30%;
   height: 50%;
   bottom: 0;
