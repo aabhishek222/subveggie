@@ -45,6 +45,7 @@ body {
   color: #303030;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /*----------------------------
@@ -1118,22 +1119,44 @@ h5.widget-title:hover::before,
   width: 100%;
 }
 .widget-icon {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .widget-icon a {
   display: inline-block;
   width: 35px;
   height: 35px;
   line-height: 35px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   text-align: center;
   margin-right: 10px;
 }
-.widget-icon a:hover {
+/* .widget-icon a:hover {
   background: #77bb17;
   color: #fff;
   border: 1px solid #77bb17;
+} */
+.widget-icon a i.fa-facebook {
+  color: #3b5998;
 }
+.widget-icon a i.fa-twitter {
+  color: #00b6f1;
+}
+.widget-icon a i.fa-pinterest {
+  color: #ce3a3f;
+}
+.widget-icon a i.fa-linkedin {
+  color: #007bb6;
+}
+.widget-icon a i.fa-youtube-play {
+  color: #ff0000;
+}
+.widget-icon a i.fa-whatsapp {
+  color: #25d366;
+}
+.widget-icon a i.fa-envelope-o {
+  color: #bb001b;
+}
+
 .img-gallery {
   margin-right: -2%;
 }
@@ -1573,7 +1596,12 @@ h5.widget-title:hover::before,
   background-image: url(../img/gallery/8.jpg);
 }
 .theme2.theme4.hero-area {
-  background: url(../img/slide-bg-8.jpg) no-repeat 0 0 / cover;
+  background: url(http://www.outsource2rescue.com/public_html/http://www.outsource2rescue.com/wp-content/uploads/2017/12/contactus2.jpg)
+    no-repeat 0 0 / cover;
+  opacity: unset !important;
+}
+.incht {
+  height: 10rem;
 }
 .product-gallery-overlay {
   position: absolute;
@@ -1668,6 +1696,14 @@ h5.widget-title:hover::before,
 }
 .google-map {
   height: 450px;
+}
+.foimg {
+  height: 23em;
+  width: 20em;
+  margin-bottom: 2em;
+}
+a i.fa-facebook {
+  color: #3b5998;
 }
 /*--------------------------------------
 --------- CONTACT PAGE CSS END ---------
@@ -1977,6 +2013,9 @@ a.read-more i {
 }
 .blog-details .social-icon a i.fa-linkedin {
   color: #007bb6;
+}
+.blog-details .social-icon a i.fa-youtube-play {
+  color: #ff0000;
 }
 .comments-area {
   background: #77bb17;
