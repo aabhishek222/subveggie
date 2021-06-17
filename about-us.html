@@ -179,16 +179,21 @@
                 the Indian states.But now get it delivered right at your
                 doorstep.
               </p>
-              <a href="#" target="_blank"
+             <a tabindex="0" role="button"  data-toggle="popover" data-trigger="focus" data-placement="bottom" title="QR Code" data-url="https://www.gloomycorner.com"
                 ><img
+                style="cursor: pointer;"
                   src="https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2016/02/30123948/download-google-ext-1.png"
                   alt="Get it on Google Play"
               /></a>
-              <a href="#" target="_blank"
+               <div id="qrcode" style="display:none; width:auto; height:auto;padding:15px;"></div>
+              <a tabindex="0" role="button"  data-toggle="popover" data-trigger="focus" data-placement="bottom" title="QR Code" data-url="https://www.google.com"
                 ><img
+                 style="cursor: pointer;"
                   src="https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2016/02/29165321/itunes_badge.png"
                   alt="Get it on iTunes"
               /></a>
+               <div id="qrcode" style="display:none; width:auto; height:auto;padding:15px;"></div>
+            </div>
             </div>
           </div>
         </div>
@@ -511,5 +516,33 @@
     <script src="assets/js/jquery.imagezoom.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/qrcode.min.js?ver=v1.0"></script>
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcode"),
+            {
+                width : 120,
+                height : 120
+            }
+        );
+        function makeQrcode(e) {
+            qrcode.makeCode(e.attr("data-url"));
+        }
+        jQuery(document).ready(function(){
+            jQuery("[data-toggle='popover']").popover(
+                options={
+                    content: jQuery("#qrcode"),
+                    html: true // important! popover html content (tag: "#qrcode") which contains an image
+                }
+            );
+
+            jQuery("[data-toggle='popover']").on("show.bs.popover", function(e) {
+                makeQrcode(jQuery(this));
+                jQuery("#qrcode").show();
+            });
+        });
+    </script>
+    <script>
   </body>
 </html>
