@@ -1156,7 +1156,12 @@ h5.widget-title:hover::before,
 .widget-icon a i.fa-envelope-o {
   color: #bb001b;
 }
-
+.fa-whatsapp {
+  color: #25d366;
+}
+.fa-envelope-o {
+  color: #bb001b;
+}
 .img-gallery {
   margin-right: -2%;
 }
@@ -1698,9 +1703,10 @@ h5.widget-title:hover::before,
   height: 450px;
 }
 .foimg {
-  height: 23em;
-  width: 20em;
+  height: 8em;
+  width: 8em;
   margin-bottom: 2em;
+  margin-right: 2em;
 }
 a i.fa-facebook {
   color: #3b5998;
